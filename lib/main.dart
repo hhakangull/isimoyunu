@@ -70,7 +70,7 @@ class _MyAppHomeState extends State<MyAppHome> {
       updateLastTypedAt();
       step++;
     });
-    var timer = Timer.periodic(new Duration(seconds: 1), (timer) {
+    Timer.periodic(new Duration(seconds: 1), (timer) {
       int now = DateTime.now().millisecondsSinceEpoch;
       //Game OVER
       setState(() {
